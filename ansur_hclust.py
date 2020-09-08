@@ -12,7 +12,7 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.decomposition import PCA
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import silhouette_score
-from plots import pairs_plot
+from plots import pairs_plot, corr_plot
 
 
 # read in the data
@@ -21,8 +21,11 @@ X = pd.read_csv("X ansur.csv")
 # standardize the data to take on values between 0 and 1
 X = (X - X.min()) / (X.max() - X.min())
 
+# plot correlations to see how many clusters there are
+corr_plot(X, method="complete")
+
 # train a Hierarchical Clustering model
-cluster = AgglomerativeClustering(n_clusters=6, linkage="ward", distance_threshold=None)
+cluster = AgglomerativeClustering(n_clusters=4, linkage="ward", distance_threshold=None)
 labels = cluster.fit_predict(X)
 
 # train a PCA model

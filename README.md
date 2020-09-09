@@ -1,6 +1,6 @@
 
 ## ANSUR
-- ansur.csv *: Soldier body measurements*
+- ansur.csv *: Body measurements of army soldiers*
 - ansur_features.py *: Generates features*
 - ansur_pca.py *: Builds and tests Principal Component Analysis models*
 - ansur_isomap.py *: Builds and tests Isomap models*

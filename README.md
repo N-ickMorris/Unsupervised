@@ -14,3 +14,11 @@
 - crime_isomap.py *: Builds and tests Isomap models*
 - crime_kmeans.py *: Builds and tests k-Means models*
 - crime_hclust.py *: Builds and tests Hierarchical Clustering models*
+
+## Titanic
+- titanic.csv *: Details about passengers*
+- titanic_features.py *: Generates features*
+- titanic_pca.py *: Builds and tests Principal Component Analysis models*
+- titanic_isomap.py *: Builds and tests Isomap models*
+- titanic_kmeans.py *: Builds and tests k-Means models*
+- titanic_hclust.py *: Builds and tests Hierarchical Clustering models*
